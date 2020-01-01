@@ -15,42 +15,42 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "in which country pyramids are located",
-        imgSrc : "egypt.JPG",
+        imgSrc : "egypt.jpg",
         choiceA : "Egypt",
         choiceB : "Sudan",
         choiceC : "lebanon",
         correct : "A"
     },{
         question : "how many years can penguin live?",
-        imgSrc : "baby-penguins.JPG",
+        imgSrc : "baby-penguins.jpg",
         choiceA : "up to 20",
         choiceB : "up to 25",
         choiceC : "up to 30",
         correct : "C"
     },{
         question : "Which city has the best coffee in the world?",
-        imgSrc : "Coffee.JPG",
+        imgSrc : "coffee.jpg",
         choiceA : "london",
         choiceB : "New Zealand",
         choiceC : "Vienna",
         correct : "A"
     },{
         question : "How matches did Mohammed Ali lose in his career?",
-        imgSrc : "mohamedAli.JFIF",
+        imgSrc : "mohamedAli.jfif",
         choiceA : "Two times",
         choiceB : "not even one",
         choiceC : "only one",
         correct : "C"
     },{
         question : "In what year did princess diana die? " ,
-        imgSrc : "diana.JPG",
+        imgSrc : "diana.jpg",
         choiceA : "1955",
         choiceB : "1997",
         choiceC : "1999",
         correct : "B"
     },{
         question : "in which country located",
-        imgSrc : "syria.JPG",
+        imgSrc : "syria.jpg",
         choiceA : "london",
         choiceB : "syria",
         choiceC : "Jordan",
@@ -163,11 +163,11 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "5.PNG" :
-              (scorePerCent >= 60) ? "4.PNG" :
-              (scorePerCent >= 40) ? "3.PNG" :
-              (scorePerCent >= 20) ? "2.PNG" :
-              "1.PNG";
+    let img = (scorePerCent >= 80) ? "5.png" :
+              (scorePerCent >= 60) ? "4.png" :
+              (scorePerCent >= 40) ? "3.png" :
+              (scorePerCent >= 20) ? "2.png" :
+              "1.png";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
